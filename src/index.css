@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "light";
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}

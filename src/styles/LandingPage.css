@@ -1,0 +1,35 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'light', sans-serif;
+  text-align: center;
+  background-image: url('/src/Imgs/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+}
+
+.landing-page {
+  min-height: 100vh;
+  background-image: url('/src/Imgs/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 600px) {
+  html, body, .landing-page {
+    background-attachment: scroll;
+  }
+}

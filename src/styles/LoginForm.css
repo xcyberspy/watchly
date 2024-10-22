@@ -1,0 +1,184 @@
+.form-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #dcdcdc;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .submit-btn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #D00000;
+    background-color: transparent;
+    color: #D00000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .submit-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #D00000;
+    transition: all 0.5s ease;
+    width: 0;
+    height: 0;
+    z-index: -1;
+  }
+  
+  .submit-btn:hover::before {
+    width: 300%;
+    height: 300%;
+  }
+  
+  .submit-btn:hover {
+    color: #ffffff;
+  }
+  
+  .form__group {
+    position: relative;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .form__field {
+    width: 100%; /* Ensure it takes full width of the container */
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1rem;
+    cursor: text;
+    top: 1.5rem;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #aba5a5;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #DC2F02, #E85D04);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #DC2F02;
+    font-weight: 700;
+  }
+  
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+    border-color: #DC2F02;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #DC2F02, #E85D04);
+  }
+  
+  .form-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .form-section p {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .form-section button {
+    background: none;
+    border: none;
+    color: #DC2F02;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .form-box {
+      padding: 1.5rem;
+      min-height: auto;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .submit-btn {
+      padding: 0.7em 1.5em;
+      font-size: 0.9rem;
+    }
+  
+    .form__field, .form__label {
+      font-size: 1rem;
+    }
+  
+    .form-section p, .form-section button {
+      font-size: 0.8rem;
+    }
+  }
