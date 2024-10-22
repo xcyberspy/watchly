@@ -30,53 +30,12 @@ const SignUpForm = ({ onSignUp, onSwitchToLogin }) => {
 
   return (
     <form className="form-box" onSubmit={handleSubmit}>
-      <h1 className="title">Sign up</h1>
-      <p className="subtitle">Create a free account with your email.</p>
-      <div className="form-container">
-        <div className="form__group field">
-          <input
-            type="text"
-            id="fullName"
-            name="fullName"
-            className="form__field"
-            placeholder="Full name"
-            value={formData.fullName}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="fullName" className="form__label">Full Name</label>
-        </div>
-        <div className="form__group field">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="form__field"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="email" className="form__label">Email</label>
-        </div>
-        <div className="form__group field">
-          <input
-            type="password"
-            id="password"
-            name="password"
-            className="form__field"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="password" className="form__label">Password</label>
-        </div>
-      </div>
-      <button type="submit" className="submit-btn">Sign up</button>
-      <div className="form-section">
-        <p>Have an account? <button type="button" onClick={onSwitchToLogin}>Log in</button></p>
-      </div>
+      <h1 className="title">Sign Up</h1>
+      <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} required />
+      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
+      <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
+      <button type="submit">Sign Up</button>
+      <button type="button" onClick={onSwitchToLogin}>Already have an account? Login</button>
     </form>
   );
 };

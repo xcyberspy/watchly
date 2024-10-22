@@ -1,8 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
+  align-items: center;;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   height: 80px;
@@ -13,41 +12,42 @@
   display: flex;
   justify-content: flex-start;
 }
-
 .menu-button {
   background: none;
   border: none;
-  padding: 0.6rem;
+  padding: 1rem;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+
 }
 
 .menu-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(245, 245, 245, 0.354);
 }
 
 .menu img {
-  height: 24px;
+  height: 40px;
   width: auto;
-  filter: invert(1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .navbar {
-    padding: 0 0.5rem;
-    height: 60px;
+    flex-direction: column;
+    height: auto; 
   }
 
   .logo img {
-    height: 40px;
+    height: 150px;
   }
 
   .menu-button {
-    padding: 0.4rem;
+    padding: 0.2rem;
   }
 
   .menu img {
-    height: 20px;
+    height: 15px;
   }
 }

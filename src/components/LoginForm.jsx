@@ -30,39 +30,10 @@ const LoginForm = ({ onLogin, onSwitchToSignUp }) => {
   return (
     <form className="form-box" onSubmit={handleSubmit}>
       <h1 className="title">Log In</h1>
-      <p className="subtitle">Welcome back! Please log in to your account.</p>
-      <div className="form-container">
-        <div className="form__group field">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="form__field"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="email" className="form__label">Email</label>
-        </div>
-        <div className="form__group field">
-          <input
-            type="password"
-            id="password"
-            name="password"
-            className="form__field"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="password" className="form__label">Password</label>
-        </div>
-      </div>
-      <button type="submit" className="submit-btn">Log In</button>
-      <div className="form-section">
-        <p>Don't have an account? <button type="button" onClick={onSwitchToSignUp}>Sign up</button></p>
-      </div>
+      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange}  />
+      <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange}  />
+      <button type="submit">Log In</button>
+      <button type="button" onClick={onSwitchToSignUp}>Don't have an account? Sign up</button>
     </form>
   );
 };

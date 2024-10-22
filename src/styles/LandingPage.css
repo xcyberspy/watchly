@@ -2,9 +2,10 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   font-family: 'light', sans-serif;
   text-align: center;
-  background-image: url('/src/Imgs/bg.jpg');
+  background-image: url('/src/Imgs/bg-3.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,23 +14,27 @@ html, body {
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height:100%;
 }
 
 footer {
-  width: 100%;
+  width: 100vh;
+  height: 100%;
 }
 
-.landing-page {
-  min-height: 100vh;
-  background-image: url('/src/Imgs/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 
 @media screen and (max-width: 600px) {
   html, body, .landing-page {
     background-attachment: scroll;
+  }
+  
+  /* New styles for better responsiveness on phones */
+  .container {
+    flex-direction: column; /* Ensure column layout on small screens */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  footer {
+    font-size: 14px; /* Adjust footer font size for readability */
   }
 }
