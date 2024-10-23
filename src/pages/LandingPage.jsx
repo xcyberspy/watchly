@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
-// import FeatureSection from '../components/FeatureSection'; // Remove or comment out this import
 import Footer from '../components/Footer';
 import '../styles/LandingPage.css';
+import Navbar from '../components/Navbar';
 
 const LandingPage = () => {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -29,6 +29,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
+      <Navbar />
       <HeroSection 
         isSignUp={isSignUp} 
         toggleForm={toggleForm} 

@@ -12,8 +12,8 @@ const Navbar = () => {
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="Logo" />
-        </Link>
-      </div>
+          </Link>
+        </div>
       <div className="menu">
         {location.pathname !== '/' && location.pathname !== '/settings' && (
           <Link to="/settings">
