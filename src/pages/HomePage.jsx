@@ -27,8 +27,8 @@ const HomePage = () => {
           <h1>Create Your Watch Party Room</h1>
           <p>Start your own cinema right now</p>
           <div className="buttons">
-            <button className="create-room-btn" onClick={handleCreateRoom}>Create a Room</button>
-            <button className="join-room-btn" onClick={handleJoinRoom}>Join a Room</button>
+            <button className="button" onClick={handleCreateRoom}>Create a Room</button>
+            <button className="button2" onClick={handleJoinRoom}>Join a Room</button>
           </div>
         </div>
 

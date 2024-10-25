@@ -1,40 +1,33 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
   font-family: 'light', sans-serif;
-  text-align: center;
-  background-image: url('/src/Imgs/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  height: 100vh;
+  background-color: #03071e;
+  background-image: linear-gradient(43deg, #03071e 0%, #6a040f 46%, #d00000 100%);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height:100%;
+.landing-page{
+  height: 100vh;
+}
+.navbar{
+  height: 10vh;
+}
+.hero-section{
+  height: 90vh;
 }
 
-footer {
-  width: 100%;
-  height: 200px;
-}
+@media (max-width: 600px) {
+  html, body {
+    font-size: 14px;
+    background-color: #03071e;
+    background-image: linear-gradient(180deg, #03071e 0%, #6a040f 100%);
 
-
-@media screen and (max-width: 600px) {
-  html, body, .landing-page {
-    background-attachment: scroll;
-  }
-  
-  /* New styles for better responsiveness on phones */
-  .container {
-    flex-direction: column; /* Ensure column layout on small screens */
-    padding: 10px; /* Add padding for better spacing */
   }
 
-  footer {
-    font-size: 14px; /* Adjust footer font size for readability */
+  .navbar {
+    height: 15vh;
+  }
+
+  .hero-section {
+    height: 85vh;
   }
 }

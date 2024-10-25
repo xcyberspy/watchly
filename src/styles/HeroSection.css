@@ -3,9 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
-  background-color: #0000004d;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+
 }
 
 .hero-content {
@@ -23,6 +22,7 @@
   font-size: 1.5rem;
   text-align: left;
   margin-bottom: 2rem;
+  line-height: 50px;
 }
 
 .form-container {

@@ -1,0 +1,25 @@
+.create-room{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-room h1{
+  margin-top: 20px;
+}
+
+.create-room form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-room input{
+  margin: 10px;
+}
+
+.create-room button{
+  margin: 10px;
+}
+
+

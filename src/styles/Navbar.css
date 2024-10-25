@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
   color: #fff;
-  height: 80px;
+  height: 10vh;
 }
 
 .logo img {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/LoginForm.css';
+import '../styles/SignUpForm.css';
 
 const LoginForm = ({ onLogin, onSwitchToSignUp }) => {
   const [formData, setFormData] = useState({
@@ -30,10 +30,18 @@ const LoginForm = ({ onLogin, onSwitchToSignUp }) => {
   return (
     <form className="form-box" onSubmit={handleSubmit}>
       <h1 className="title">Log In</h1>
-      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange}  />
-      <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange}  />
-      <button type="submit">Log In</button>
-      <button type="button" onClick={onSwitchToSignUp}>Don't have an account? Sign up</button>
+      <div className="form__group field">
+      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} className='form__field' />
+      <label for="email" className="form__label">Email</label>
+      </div>
+      <div className="form__group field">
+      <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} className='form__field'  />
+      <label for="password" className="form__label">Password</label>
+      </div>
+      <div className='btn-grp'>
+      <button className='signup-button'><span className="text">log in</span><span>welcom back</span></button>
+      <button className="signup-button"  onClick={onSwitchToSignUp}><span className="text">Want to join us?</span><span>Sign Up</span></button>
+      </div>
     </form>
   );
 };

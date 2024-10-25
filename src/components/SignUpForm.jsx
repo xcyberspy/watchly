@@ -31,11 +31,22 @@ const SignUpForm = ({ onSignUp, onSwitchToLogin }) => {
   return (
     <form className="form-box" onSubmit={handleSubmit}>
       <h1 className="title">Sign Up</h1>
-      <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} required />
-      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-      <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
-      <button type="submit">Sign Up</button>
-      <button type="button" onClick={onSwitchToLogin}>Already have an account? Login</button>
+      <div className="form__group field">
+      <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} required className='form__field' />
+      <label for="fullName" className="form__label">Full Name</label>
+      </div>
+      <div className="form__group field">
+      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className='form__field'  />
+      <label for="email" className="form__label">Email</label>
+      </div>
+      <div className="form__group field">
+      <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required className='form__field'  />
+      <label for="password" className="form__label">Password</label>
+      </div>
+      <div className='btn-grp'>
+      <button className="signup-button"><span className="text">Sign Up</span><span>Join Now</span></button>
+      <button className="signup-button"  onClick={onSwitchToLogin}><span className="text">Already have an account?</span><span>Login</span></button>
+      </div>
     </form>
   );
 };

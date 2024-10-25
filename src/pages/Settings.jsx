@@ -8,8 +8,8 @@ function ProfileSettings() {
     const [activeSubComponent, setActiveSubComponent] = useState('personal');
 
     return (
-        <div className="settings-container">
-            <div className="radio-container">
+        <div className="settings-container2">
+            <div className="radio-container2">
                 <input 
                     type="radio" 
                     id="personal" 
@@ -50,12 +50,13 @@ function ProfileSettings() {
                     <div className="glider"></div>
                 </div>
             </div>
-
-            <div className="content">
-                {activeSubComponent === 'personal' && <PersonalInformation />}
-                {activeSubComponent === 'privacy' && <PrivacySettings />}
-                {activeSubComponent === 'notifications' && <NotificationsSettings />}
-                {activeSubComponent === 'linked' && <LinkedAccounts />}
+            <div className='content-container'> 
+                <div className="content">
+                    {activeSubComponent === 'personal' && <PersonalInformation />}
+                    {activeSubComponent === 'privacy' && <PrivacySettings />}
+                    {activeSubComponent === 'notifications' && <NotificationsSettings />}
+                    {activeSubComponent === 'linked' && <LinkedAccounts />}
+                </div>
             </div>
         </div>
     );
@@ -64,8 +65,21 @@ function ProfileSettings() {
 
 function PersonalInformation() {
     return (
-        <div>
-            <h2>hello</h2>
+        <div className='personal-information'>
+            <h2>Personal Information</h2>
+            <div className='personal-information-content'>
+                <label htmlFor="FullName">Full Name</label>
+                <input type="text" id="FullName" name="FullName" />
+                <label htmlFor="Email">Email</label>
+                <input type="email" id="Email" name="Email" />
+                <label htmlFor="PhoneNumber">Phone Number</label>
+                <input type="text" id="PhoneNumber" name="PhoneNumber" />
+                <label htmlFor="DateOfBirth">Date of Birth</label>
+                <input type="date" id="DateOfBirth" name="DateOfBirth" />
+                <label htmlFor="ProfilePicture">Profil Picture</label>
+                <input type="file" id="ProfilePicture" name="ProfilePicture" />
+                <button>Save</button>
+            </div>
         </div>
     );
 }
@@ -139,6 +153,7 @@ const Radio = ({ activeComponent, setActiveComponent, goBackToHomepage }) => {
         </div>
     );
 };
+
 function Settings() {
     const [activeComponent, setActiveComponent] = useState('profile');
     const navigate = useNavigate();
