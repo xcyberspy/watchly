@@ -3,23 +3,56 @@
   flex-direction: column;
   align-items: center;
 }
-
-.create-room h1{
-  margin-top: 20px;
+.create-room h1 {
+  color: rgb(244, 244, 244);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0.5em;
 }
-
-.create-room form{
+form{
+  background-color: white;
+  padding: 3.125em;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
 }
 
-.create-room input{
-  margin: 10px;
+.form--input {
+  width: 100%;
+  margin-bottom: 1.25em;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0.8em;
+  font-family: 'Inter', sans-serif;
+  outline: none;
 }
 
-.create-room button{
-  margin: 10px;
+.form--input:focus {
+  border: 1px solid #DC2F02;
+  outline: none;
+}
+.form--submit {
+  width: 50%;
+  padding: 0.625em;
+  border-radius: 5px;
+  color: white;
+  background-color: #DC2F02;
+  border: 1px dashed #DC2F02;
+  cursor: pointer;
+}
+
+.form--submit:hover {
+  color: #DC2F02;
+  background-color: white;
+  border: 1px dashed #DC2F02;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 

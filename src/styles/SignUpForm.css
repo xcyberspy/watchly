@@ -154,3 +154,65 @@
   justify-content: center;
   align-items: center;
 }
+.forgot-password{
+  text-align: left;
+  margin-bottom: 20px;
+}
+.forgot-password a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.forgot-password-button {
+  font-size: 18px;
+  color: grey;
+  font-family: Poppins;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  display: inline-flex;
+  align-items: center;
+}
+
+.forgot-password-button:focus,
+.forgot-password-button:hover {
+  color: white;
+}
+
+.forgot-password-button:focus:after,
+.forgot-password-button:hover:after {
+  width: 100%;
+  right: ;
+  left: auto; /* Ensure left is auto to override the initial value */
+}
+
+.forgot-password-button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -7px;
+  right: auto; /* Start from the right */
+  left: 0; /* Ensure left is auto to override the initial value */
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, right;
+}
+
+
+.forgot-password-button:hover .svg-icon {
+  transform: rotate(0deg);
+  fill: white;
+}
+.forgot-password {
+  padding-top: 10px;
+}

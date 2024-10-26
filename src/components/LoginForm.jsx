@@ -27,6 +27,11 @@ const LoginForm = ({ onLogin, onSwitchToSignUp }) => {
     }
   };
 
+  const handleForgotPassword = (e) => {
+    e.preventDefault();
+    alert('Forgot password clicked');
+  };
+
   return (
     <form className="form-box" onSubmit={handleSubmit}>
       <h1 className="title">Log In</h1>
@@ -37,6 +42,16 @@ const LoginForm = ({ onLogin, onSwitchToSignUp }) => {
       <div className="form__group field">
       <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} className='form__field'  />
       <label for="password" className="form__label">Password</label>
+      </div>
+      <div className='forgot-password'>
+      <button 
+        type="button"
+        className='forgot-password-button' 
+        onClick={handleForgotPassword}
+      >
+        <span>Forgot Password?</span>
+        <span className="icon"></span>
+      </button>
       </div>
       <div className='btn-grp'>
       <button className='signup-button'><span className="text">log in</span><span>welcom back</span></button>

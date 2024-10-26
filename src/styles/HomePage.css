@@ -145,5 +145,6 @@
   align-items: center;
   height: 40vh;
   width: 50%;
-  background-color: #0000004a;
+  padding: 2rem;
+  margin: 2rem;
  }
