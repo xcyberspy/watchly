@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import '../styles/Room.css';
 import { useParams, useLocation } from 'react-router-dom';
 import ReactPlayer from 'react-player';
-
+import Comments from '../components/comments';
 const Room = () => {
   const { id } = useParams();
   const location = useLocation();
@@ -41,8 +41,8 @@ const Room = () => {
               <button onClick={handleStop}>Stop</button>
             </div>
           </section>
-          <section className='chat-container'>
-            <h1>chat</h1>
+          <section className='comments-container'>
+            <Comments  />
           </section>
         </main>
       </div>

@@ -58,11 +58,10 @@
     background-color: #E85D04;
   }
   
-  .chat-container {
+  .comments-container {
     flex: 1;
-    background-color: #564b4b;
-    padding: 20px;
     border-radius: 10px;
     color: white;
+    background-color: #fcfcfc;
   }
   

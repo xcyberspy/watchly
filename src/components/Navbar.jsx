@@ -9,10 +9,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Link to="/">
+        <div className="logo">
           <img src={logo} alt="Logo" />
-          </Link>
         </div>
       <div className="menu">
         {location.pathname !== '/' && location.pathname !== '/settings' && (

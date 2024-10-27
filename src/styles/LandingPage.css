@@ -1,18 +1,18 @@
 html, body {
   font-family: 'light', sans-serif;
-  height: 100vh;
+  height: 100%;
   background-color: #03071e;
   background-image: linear-gradient(43deg, #03071e 0%, #6a040f 46%, #d00000 100%);
 }
 
 .landing-page{
-  height: 100vh;
+  height: 100%;
 }
 .navbar{
-  height: 10vh;
+  height: 10%;
 }
 .hero-section{
-  height: 90vh;
+  height: 90%;
 }
 
 @media (max-width: 600px) {
@@ -24,10 +24,10 @@ html, body {
   }
 
   .navbar {
-    height: 15vh;
+    height: 15%;
   }
 
   .hero-section {
-    height: 85vh;
+    height: 85%;
   }
 }
