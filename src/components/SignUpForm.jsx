@@ -22,10 +22,12 @@ const SignUpForm = ({ onSignUp, onSwitchToLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await onSignUp(formData);
-      navigate('/home');
+      const res = await axios.post('http://localhost:5000/api/auth/register', formData);
+      console.log('User registered successfully:', res.data);
+      // Here, you might want to store the token in local storage and redirect the user
+      localStorage.setItem('token', res.data.token);
     } catch (error) {
-      console.error('Sign up failed:', error);
+      console.error('Error registering user:', error.response.data);
     }
   };
 

@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   background-color: #03071e;
   background-image: linear-gradient(43deg, #03071e 0%, #6a040f 46%, #d00000 100%);
+  overscroll-behavior: none;
 }
 
 .landing-page{
