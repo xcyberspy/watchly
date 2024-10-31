@@ -1,0 +1,36 @@
+/* Navbar styles */
+.navbar {
+    background-color: #0000004b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add horizontal padding */
+    height: 70px;
+  }
+  
+  .navbar-logo img {
+    height: 200px; /* Reduced logo size for better fit */
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Reduced gap for better spacing */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    position: relative;
+    right: 100px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .navbar-links a:hover {
+    color: #f0f0f0; /* Light grey color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }

@@ -1,0 +1,108 @@
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,4,15,1) 50%, rgba(208,0,0,1) 100%);
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.left-content {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.right-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Signup form container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Adjusted height to account for navbar */
+  
+}
+
+/* Signup form itself */
+.form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Inputs inside the form */
+.input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Button for submitting the form */
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Label for the "Show Password" checkbox */
+.label {
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* Social login links */
+.form a {
+  color: red;
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+/* Form header */
+.form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.text {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 2rem;
+  max-width: 300px;
+  text-align: left;
+
+}
+.left-content p{
+  font-size: 1.5rem;
+}
