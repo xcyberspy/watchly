@@ -1,0 +1,42 @@
+/* src/components/InfoSection.css */
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  gap: 2rem;
+  color: white;
+}
+
+.info-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.info-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.get-started {
+  background-color: #e94e1b;
+}
+
+.learn-more {
+  background-color: #ffb500;
+}
+
+.get-started:hover, .learn-more:hover {
+  opacity: 0.8;
+}
+
+.info-image img {
+  width: 500;
+  max-width: 500px;
+  border-radius: 10px;
+}

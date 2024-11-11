@@ -1,0 +1,52 @@
+/* src/components/HeroSection.css */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 2rem;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    color: #fff;
+  }
+  
+  .sign-up {
+    background-color: #e94e1b;
+    text-decoration: none;
+  }
+  
+  .log-in {
+    background-color: #ffb500;
+    text-decoration: none;
+  }
+  
+  .sign-up:hover, .log-in:hover {
+    opacity: 0.8;
+  }
+  
